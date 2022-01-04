@@ -1,0 +1,25 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jojochun/TEAM-PROFILE-GENERATOR.git"
+  },
+  "author": "Joanne Chun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jojochun/TEAM-PROFILE-GENERATOR/issues"
+  },
+  "homepage": "https://github.com/jojochun/TEAM-PROFILE-GENERATOR#readme",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
