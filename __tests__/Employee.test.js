@@ -1,23 +1,26 @@
 
-const { expect } = require('@jest/globals');
+
 const Employee = require('../lib/Employee');
 
 test('creates an Employee object', () => {
-    const employee = new Employee('Joanne');
+    const employee = new Employee('Joanne', 7, 'me@gmail.com');
 
     expect(employee.name).toBe('Joanne');
     expect(employee.id).toEqual(expect.any(Number));
-    expect(employee.email).toBe('name@gmail.com')
+    expect(employee.email).toBe('me@gmail.com')
 });
 
 test('get employee name', () => {
+    const employee = new Employee('Joanne', 7, 'me@gmail.com');
     expect(employee.getName()).toBe('Joanne');
 });
 
 test('get employee id', () => {
-    expect(employee.toEqual(expect.any(Number));
+    const employee = new Employee('Joanne', 7, 'me@gmail.com');
+    expect(employee.getId()).toEqual(expect.any(Number));
 });
 
 test('gets employee email', () => {
-    expect(employee.getEmail()).toBe('name@gmail.com');
+    const employee = new Employee('Joanne', 7, 'me@gmail.com');
+    expect(employee.getEmail()).toBe('me@gmail.com');
 });
