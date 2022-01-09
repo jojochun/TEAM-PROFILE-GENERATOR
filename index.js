@@ -13,7 +13,7 @@ const Intern = require("./lib/Intern");
 let employeesArr = [];
 
 // Questions array for all employees
-const promptEmployees = employeeData => {
+const promptEmployees = () => {
     inquirer.prompt([
         {
             type: "input",
@@ -105,7 +105,8 @@ const promptEmployees = employeeData => {
 
                     }
                     else {
-                        writeFile(generatePage(employeeData))
+                        writeFile(generatePage(employeesArr))
+                        console.log('Success! Your Team Profile has been created!')
                     }
 
 
@@ -114,10 +115,13 @@ const promptEmployees = employeeData => {
         });
 }
 
+
+
 const writeFile = fileContent => {
 
     fs.writeFileSync('./dist/index.html', fileContent);
 };
+
 promptEmployees()
 
 
