@@ -9,11 +9,20 @@ A command-line application that accepts information about employees on a softwar
 1. Install node.js
 2. Clone or download the source code from GitHub to your local machine
 3. Navigate to the root of the downloaded code
-4. Open terminal and on command line enter: npm install
+4. Open terminal and on command line enter:
+
+```shell
+npm install
+```
 
 # Usage
 
-1. On command line enter: npm start
+1. On command line enter:
+
+```shell
+npm start
+```
+
 2. Answer the prompts
 3. Navigate to dist folder
 4. Open index.html with your browser
@@ -28,12 +37,24 @@ A command-line application that accepts information about employees on a softwar
 
 # Test
 
-On command line enter: npm test
+On command line enter:
+
+```shell
+npm test
+```
 
 # Built With
 
 - HTML
 - CSS
+- Javascript
+
+# Technologies
+
+- [node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [inquirer.js](https://www.npmjs.com/package/inquirer)
+- [fs.js](https://www.npmjs.com/package/fs)
 
 # License
 
